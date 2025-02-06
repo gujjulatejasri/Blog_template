@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design a Space</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Utopia</div>
+      <nav>
+        <ul>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#">All Categories</a></li>
+          <li><a href="#">View Plans</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="register">Register</a>
+      </div>
+   </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Design a Space You Love</h1>
+        <p>
+          Give your favorite room in the house a first-class face-lift with home renovation expert Shea McGee. 
+          Discover how to add new and simple flares that transform the look and feel of the room entirely.
+        </p>
+        <button class="browse-sessions">Browse Sessions</button>
+      </div>
+      <div class="hero-image">
+        <img src="placeholder.jpg" alt="Home renovation expert">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .actions a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+header .login {
+  background-color: transparent;
+  color: #fff;
+  margin-right: 10px;
+}
+
+header .register {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.hero-text .browse-sessions {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
